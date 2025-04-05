@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take our TCM body type test and discover which of the 5 constitution patterns you have. This symptom-based Chinese medicine quiz provides personalized health recommendations.">
+    <meta name="keywords" content="TCM body type test, symptom-based constitution test, Chinese medicine quiz, find your TCM pattern, Qi deficiency symptoms, Yin Yang balance test, Chinese health assessment">
+    <title>TCM Body Type Quiz | Which Chinese Medicine Constitution Are You?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2JJVDRG33"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V2JJVDRG33');
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">TCM Quiz</a>
+            <div class="navbar-menu">
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="quiz.html" class="active" data-i18n="nav_quiz">Take the Quiz</a>
+                <a href="about.html" data-i18n="nav_about">About TCM</a>
+            </div>
+            <div class="language-selector">
+                <button data-lang="en" class="active">EN</button>
+                <button data-lang="de">DE</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <div class="container">
+            <div class="quiz-form">
+                <h1 class="text-center" data-i18n="quiz_title">Which TCM Body Type Are You?</h1>
+                <p class="text-center" style="margin-bottom: 32px;" data-i18n="quiz_intro">Answer these 10 questions honestly based on your usual condition. This Chinese medicine quiz will help identify your dominant constitution pattern and provide personalized health recommendations.</p>
+                
+                <!-- 进度条 -->
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                </div>
+                
+                <!-- 问题表单 -->
+                <form id="tcm-quiz-form">
+                    <!-- 问题 1 -->
+                    <div id="question-1" class="question-card active">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 1: <span data-i18n="q1">Do you often feel cold in your hands, feet, or body, even in warm environments?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="q1_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q1_o1">Yes, frequently</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="q1_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q1_o2">Sometimes</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="q1_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q1_o3">Rarely or never</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 2 -->
+                    <div id="question-2" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 2: <span data-i18n="q2">How would you describe your energy levels throughout the day?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="q2_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q2_o1">Often tired and lacking energy</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="q2_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q2_o2">Moderate energy with some fluctuation</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="q2_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q2_o3">Consistently good energy levels</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 3 -->
+                    <div id="question-3" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 3: <span data-i18n="q3">Do you sweat easily even with little exertion or in mild temperatures?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="q3_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q3_o1">Yes, I sweat easily</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="q3_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q3_o2">Average sweating</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="q3_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q3_o3">No, I rarely sweat</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 4 -->
+                    <div id="question-4" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 4: <span data-i18n="q4">How would you describe your digestion?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q4" value="q4_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q4_o1">Often bloated or uncomfortable after eating</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q4" value="q4_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q4_o2">Occasionally experience digestive issues</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q4" value="q4_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q4_o3">Generally good digestion</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 5 -->
+                    <div id="question-5" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 5: <span data-i18n="q5">Do you often feel thirsty and prefer cold drinks?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q5" value="q5_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q5_o1">Yes, frequently</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q5" value="q5_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q5_o2">Sometimes</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q5" value="q5_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q5_o3">Rarely, I prefer warm drinks</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 6 -->
+                    <div id="question-6" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 6: <span data-i18n="q6">How would you describe your sleep quality?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q6" value="q6_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q6_o1">Difficulty falling or staying asleep</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q6" value="q6_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q6_o2">Sometimes restless</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q6" value="q6_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q6_o3">Generally sleep well</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 7 -->
+                    <div id="question-7" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 7: <span data-i18n="q7">Do you experience dryness (skin, lips, mouth, throat)?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q7" value="q7_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q7_o1">Yes, frequently</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q7" value="q7_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q7_o2">Sometimes</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q7" value="q7_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q7_o3">Rarely or never</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 8 -->
+                    <div id="question-8" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 8: <span data-i18n="q8">How would you describe your emotional state?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q8" value="q8_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q8_o1">Often anxious or worried</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q8" value="q8_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q8_o2">Sometimes stressed but generally balanced</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q8" value="q8_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q8_o3">Usually calm and emotionally stable</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 9 -->
+                    <div id="question-9" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 9: <span data-i18n="q9">Do you experience bloating or a feeling of heaviness after eating?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q9" value="q9_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q9_o1">Yes, frequently</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q9" value="q9_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q9_o2">Sometimes</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q9" value="q9_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q9_o3">Rarely or never</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 问题 10 -->
+                    <div id="question-10" class="question-card">
+                        <h3 class="question-title"><span data-i18n="question_prefix">Question</span> 10: <span data-i18n="q10">How do you react to humid weather?</span></h3>
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q10" value="q10_o1" class="option-radio">
+                                    <span class="option-text" data-i18n="q10_o1">Feel uncomfortable and heavy</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q10" value="q10_o2" class="option-radio">
+                                    <span class="option-text" data-i18n="q10_o2">Slightly affected</span>
+                                </label>
+                            </li>
+                            <li class="option-item">
+                                <label class="option-label">
+                                    <input type="radio" name="q10" value="q10_o3" class="option-radio">
+                                    <span class="option-text" data-i18n="q10_o3">Not particularly affected</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 导航按钮 -->
+                    <div class="quiz-navigation">
+                        <button type="button" id="prev-btn" class="btn btn-secondary" data-i18n="previous">Previous</button>
+                        <button type="button" id="next-btn" class="btn btn-primary" data-i18n="next">Next</button>
+                        <button type="button" id="submit-btn" class="btn btn-primary" data-i18n="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer style="background-color: var(--apple-light-gray); padding: 24px 0; text-align: center; margin-top: 48px;">
+        <div class="container">
+            <p>© 2023 TCM Constitution Quiz. All rights reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.9rem; color: var(--apple-gray);">This quiz is for informational purposes only and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="js/translations.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html> 

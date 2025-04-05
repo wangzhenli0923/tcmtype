@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#f5f7fa" stroke="#0071e3" stroke-width="4"/>
+  
+  <!-- 月亮符号 (阴) - 减弱的样式 -->
+  <path d="M100,60 A40,40 0 1,1 100,140 A30,30 0 1,0 100,60" fill="none" stroke="#0071e3" stroke-width="3" stroke-dasharray="5,3"/>
+  
+  <!-- 火焰象征内热 -->
+  <path d="M90,130 C85,120 80,105 85,90 C90,75 90,70 90,65 C90,60 100,70 100,80 C100,90 110,75 110,85 C110,95 115,100 110,110 C105,120 95,125 90,130 Z" fill="#F44336" fill-opacity="0.5" stroke="#F44336" stroke-width="1"/>
+  
+  <!-- 干燥裂纹 -->
+  <g stroke="#86868b" stroke-width="1.5">
+    <path d="M40,60 C50,55 60,65 70,60" />
+    <path d="M60,40 C65,50 55,60 60,70" />
+    <path d="M130,40 C135,50 125,60 130,70" />
+    <path d="M140,60 C150,55 160,65 170,60" />
+    <path d="M40,140 C50,135 60,145 70,140" />
+    <path d="M140,140 C150,135 160,145 170,140" />
+  </g>
+  
+  <!-- 温度计 - 显示高温 -->
+  <rect x="145" y="75" width="10" height="50" rx="5" ry="5" fill="white" stroke="#0071e3" stroke-width="2"/>
+  <circle cx="150" cy="130" r="8" fill="#F44336" stroke="#0071e3" stroke-width="2"/>
+  <rect x="148" y="85" width="4" height="40" rx="2" ry="2" fill="#F44336"/>
+</svg> 

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your personalized TCM constitution results with diet, herb, and lifestyle recommendations for your body type. Get advice for balancing Qi deficiency, Yin deficiency, and other patterns.">
+    <meta name="keywords" content="TCM advice for body type, Chinese medicine recommendations, best herbs for Qi deficiency, Yang deficiency treatment, Yin deficiency symptoms, TCM diet plan, how to balance your energy naturally">
+    <title>Your TCM Body Type Results | Personalized Chinese Medicine Recommendations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2JJVDRG33"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V2JJVDRG33');
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">TCM Quiz</a>
+            <div class="navbar-menu">
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="quiz.html" data-i18n="nav_quiz">Take the Quiz</a>
+                <a href="about.html" data-i18n="nav_about">About TCM</a>
+            </div>
+            <div class="language-selector">
+                <button data-lang="en" class="active">EN</button>
+                <button data-lang="de">DE</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <div class="container">
+            <div class="result-container fade-in">
+                <!-- 结果标题 -->
+                <div class="result-header">
+                    <h1 class="result-title" data-i18n="result_title">Your TCM Body Type Results</h1>
+                    <p class="result-subtitle" data-i18n="result_subtitle">Based on your symptoms and patterns, we've identified your Chinese medicine constitution</p>
+                </div>
+                
+                <!-- 体质类型显示 -->
+                <div class="card" style="text-align: center; padding: 32px; background: linear-gradient(to bottom, white, var(--health-light-green));">
+                    <div class="constitution-type">
+                        <img id="constitution-icon" src="img/qi_deficiency.svg" alt="Constitution Type Icon" class="constitution-icon">
+                        <div>
+                            <h2 id="constitution-name" class="constitution-name" data-i18n="qi_deficiency">Qi Deficiency</h2>
+                            <p style="color: var(--apple-blue); font-weight: 500;">Primary Constitution Type</p>
+                        </div>
+                    </div>
+                    <p id="constitution-description" style="max-width: 700px; margin: 20px auto 0;" data-i18n="qi_deficiency_desc">Characterized by low energy, shortness of breath, and a tendency to catch colds easily.</p>
+                </div>
+                
+                <!-- 次要体质类型 (会由JS动态添加) -->
+                <div id="secondary-type-section" style="display: none;" class="card" style="margin-top: 24px;">
+                    <h4 data-i18n="secondary_constitution">Secondary TCM Pattern</h4>
+                    <div style="display: flex; align-items: center; margin-top: 16px;">
+                        <img id="secondary-icon" src="" alt="Secondary Constitution Type" style="width: 50px; height: 50px; margin-right: 16px;">
+                        <div>
+                            <h5 id="secondary-name" style="margin-bottom: 8px;"></h5>
+                            <p id="secondary-description" style="font-size: 0.9rem;"></p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 16px; font-style: italic;" data-i18n="mixed_constitution_notice">Your body shows characteristics of multiple constitution types. This mixed pattern is common and may require balanced approaches to treatment.</p>
+                </div>
+                
+                <!-- 调理建议 -->
+                <section class="recommendation-section">
+                    <h3 data-i18n="balance_tips">TCM Health Recommendations</h3>
+                    
+                    <!-- 饮食建议 -->
+                    <div class="card card-green">
+                        <h4 data-i18n="diet_recommendations">Chinese Medicine Diet Plan</h4>
+                        <ul class="recommendation-list">
+                            <li class="recommendation-item">
+                                <h4 id="diet-title" data-i18n="qi_deficiency_diet">Best Foods for Your Type</h4>
+                                <p id="diet-content" data-i18n="qi_deficiency_diet_text">Moderately warming foods like brown rice, sweet potatoes, millet, lean meats, dates, ginger, and oats can help strengthen your Qi.</p>
+                            </li>
+                            <li class="recommendation-item">
+                                <h4 id="avoid-title" data-i18n="qi_deficiency_avoid">Foods to Moderate</h4>
+                                <p id="avoid-content" data-i18n="qi_deficiency_avoid_text">Limit raw and cold foods, excessive dairy, and iced beverages which can further deplete your Qi.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 生活方式建议 -->
+                    <div class="card card-blue">
+                        <h4 data-i18n="lifestyle_adjustments">Lifestyle & Energy Balance</h4>
+                        <ul class="recommendation-list">
+                            <li class="recommendation-item">
+                                <h4 id="lifestyle-title" data-i18n="qi_deficiency_lifestyle">How to Balance Your Energy Naturally</h4>
+                                <p id="lifestyle-content" data-i18n="qi_deficiency_lifestyle_text">Gentle exercises like Tai Chi, Qigong, and walking in nature. Ensure adequate sleep and avoid overexertion.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 草药建议 -->
+                    <div class="card card-red">
+                        <h4>Herbal Support Suggestions</h4>
+                        <ul class="recommendation-list">
+                            <li class="recommendation-item">
+                                <h4 id="herbs-title">Best Herbs for Your Type</h4>
+                                <p id="herbs-content">Traditional Chinese herbs that may be beneficial include Astragalus (Huang Qi), Codonopsis (Dang Shen), and Chinese dates (Da Zao). Consult with a TCM practitioner before using herbs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <!-- 体质图表 -->
+                <div class="card" style="margin-top: 32px; padding: 24px; text-align: center;">
+                    <h4 style="margin-bottom: 16px;">Your TCM Constitution Profile</h4>
+                    <p style="margin-bottom: 24px; color: var(--apple-gray);">This chart shows your tendencies across all constitution types</p>
+                    <div id="constitution-chart" style="height: 200px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-around; gap: 16px;">
+                        <!-- 图表会由JS动态生成 -->
+                    </div>
+                    <div style="display: flex; justify-content: space-around; margin-top: 8px; font-size: 0.8rem; color: var(--apple-gray);">
+                        <span>Qi Def.</span>
+                        <span>Yang Def.</span>
+                        <span>Yin Def.</span>
+                        <span>Phlegm</span>
+                        <span>Blood St.</span>
+                    </div>
+                </div>
+                
+                <!-- 分享和重测 -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 32px;">
+                    <button class="btn btn-secondary" data-i18n="email_results">Email My Results</button>
+                    <a href="quiz.html" class="btn btn-primary" style="text-align: center;" data-i18n="retake_quiz">Retake Quiz</a>
+                </div>
+                
+                <!-- 延伸阅读 -->
+                <div class="card" style="margin-top: 32px;">
+                    <h4 style="margin-bottom: 16px;">Learn More About Your TCM Body Type</h4>
+                    <p>Understanding your constitution type is just the first step in your TCM wellness journey. Explore our resources for deeper insights:</p>
+                    <ul style="margin-top: 16px; padding-left: 20px;">
+                        <li><a href="about.html" style="color: var(--apple-blue);">The Five Elements in TCM</a></li>
+                        <li><a href="about.html" style="color: var(--apple-blue);">How to Balance Yin and Yang Naturally</a></li>
+                        <li><a href="about.html" style="color: var(--apple-blue);">Seasonal Adjustments for Your Body Type</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 联系我们 -->
+                <div class="contact-section" style="margin-top: 40px;">
+                    <h3>Contact Us</h3>
+                    <p style="margin-bottom: 16px;">Have questions about your TCM results or need more personalized guidance?</p>
+                    <a href="mailto:zhenliwang9@gmail.com" class="contact-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        zhenliwang9@gmail.com
+                    </a>
+                </div>
+                
+                <!-- 免责声明 -->
+                <div style="margin-top: 32px; font-size: 0.9rem; color: var(--apple-gray); text-align: center;">
+                    <p>These recommendations are based on traditional Chinese medicine principles and are for educational purposes only. Always consult with a healthcare professional before making significant changes to your diet or lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer style="background-color: var(--apple-light-gray); padding: 24px 0; text-align: center; margin-top: 48px;">
+        <div class="container">
+            <p>© 2023 TCM Constitution Quiz. All rights reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.9rem; color: var(--apple-gray);">This quiz is for informational purposes only and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="js/translations.js"></script>
+    <script src="js/quiz.js"></script>
+    
+    <!-- 体质图表脚本 -->
+    <script>
+        // 在页面加载完成后生成体质图表
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const scoresData = localStorage.getItem('tcmQuizScores');
+                if (scoresData) {
+                    try {
+                        const scores = JSON.parse(scoresData);
+                        const chartContainer = document.getElementById('constitution-chart');
+                        
+                        if (chartContainer) {
+                            chartContainer.innerHTML = ''; // 清空容器
+                            
+                            // 找出最高分数，用于归一化
+                            const maxScore = Math.max(...scores.map(item => item.score));
+                            const maxHeight = 180; // 最大柱高
+                            
+                            // 为每种体质创建一个柱状图
+                            scores.forEach(item => {
+                                // 计算柱高（至少10px，便于看到）
+                                const barHeight = item.score > 0 
+                                    ? Math.max(10, (item.score / maxScore) * maxHeight)
+                                    : 5;
+                                
+                                // 确定柱子颜色
+                                const resultType = localStorage.getItem('tcmQuizResult');
+                                const secondaryType = localStorage.getItem('tcmQuizSecondaryType');
+                                
+                                let barColor = '#e0e0e0'; // 默认灰色
+                                if (item.type === resultType) {
+                                    barColor = 'var(--apple-blue)'; // 主体质类型
+                                } else if (item.type === secondaryType) {
+                                    barColor = 'var(--apple-green)'; // 次要体质类型
+                                }
+                                
+                                // 创建柱状图元素
+                                const bar = document.createElement('div');
+                                bar.style.width = '30px';
+                                bar.style.height = `${barHeight}px`;
+                                bar.style.backgroundColor = barColor;
+                                bar.style.borderRadius = '4px 4px 0 0';
+                                bar.style.position = 'relative';
+                                
+                                // 添加分数标签
+                                if (item.score > 0) {
+                                    const scoreLabel = document.createElement('div');
+                                    scoreLabel.style.position = 'absolute';
+                                    scoreLabel.style.top = '-20px';
+                                    scoreLabel.style.left = '0';
+                                    scoreLabel.style.right = '0';
+                                    scoreLabel.style.textAlign = 'center';
+                                    scoreLabel.style.fontSize = '0.8rem';
+                                    scoreLabel.style.color = barColor;
+                                    scoreLabel.textContent = item.score;
+                                    bar.appendChild(scoreLabel);
+                                }
+                                
+                                chartContainer.appendChild(bar);
+                            });
+                        }
+                    } catch (e) {
+                        console.error('Error generating chart:', e);
+                    }
+                }
+            }, 500); // 延迟一点生成图表，确保数据已加载
+        });
+    </script>
+</body>
+</html> 

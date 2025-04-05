@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your TCM body type with our Chinese medicine constitution quiz. Get personalized diet, lifestyle, and health recommendations based on your TCM constitution pattern.">
+    <meta name="keywords" content="TCM body type quiz, Chinese medicine for symptoms, traditional Chinese medicine, constitution test, what is my TCM constitution, find your TCM pattern, Chinese health quiz, Qi deficiency, Yin Yang balance">
+    <title>TCM Body Type Quiz - Discover Your Chinese Medicine Constitution | Free Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2JJVDRG33"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V2JJVDRG33');
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">TCM Quiz</a>
+            <div class="navbar-menu">
+                <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+                <a href="quiz.html" data-i18n="nav_quiz">Take the Quiz</a>
+                <a href="about.html" data-i18n="nav_about">About TCM</a>
+            </div>
+            <div class="language-selector">
+                <button data-lang="en" class="active">EN</button>
+                <button data-lang="de">DE</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 英雄区块 -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title fade-in" data-i18n="hero_title">TCM Body Type Quiz:<br>Find Your Balance</h1>
+                <p class="hero-subtitle fade-in" data-i18n="hero_subtitle">Discover your constitution type with Traditional Chinese Medicine's personalized approach to health and wellness</p>
+                <a href="quiz.html" class="btn btn-primary btn-lg fade-in" data-i18n="start_quiz">Start the Quiz</a>
+            </div>
+        </section>
+
+        <!-- 介绍区块 -->
+        <section class="container">
+            <div class="card card-blue" style="margin-top: -50px; text-align: center;">
+                <h2 data-i18n="intro_title">What is TCM Constitution?</h2>
+                <p data-i18n="intro_text" style="max-width: 800px; margin: 0 auto;">Traditional Chinese Medicine (TCM) identifies different constitution types that reflect your body's inherent patterns and tendencies. Understanding your constitution can help you make better lifestyle choices for optimal health and balance your Yin and Yang naturally.</p>
+            </div>
+
+            <!-- 特性区块 - 改为响应式网格布局 -->
+            <div class="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 48px 0;">
+                <!-- 为什么重要 -->
+                <div class="card card-green">
+                    <h3 data-i18n="why_important">Why It's Important</h3>
+                    <p data-i18n="importance_text">Knowing your TCM body type helps you understand your natural tendencies and vulnerabilities. This knowledge enables you to make targeted lifestyle adjustments that promote balance, prevent illness, and address symptoms like sleep issues, stress, and digestive problems.</p>
+                </div>
+
+                <!-- 怎么运作 -->
+                <div class="card card-green">
+                    <h3 data-i18n="how_works">How the Chinese Medicine Quiz Works</h3>
+                    <p data-i18n="how_works_text">Our symptom-based constitution test analyzes your habits and physical characteristics to identify your dominant TCM pattern. You'll receive personalized recommendations for diet, activity, and lifestyle modifications based on your unique body type.</p>
+                </div>
+            </div>
+
+            <!-- 体质类型预览 -->
+            <h2 style="text-align: center; margin: 40px 0 24px;">TCM Constitution Types</h2>
+            <div class="constitution-types-grid">
+                <div class="constitution-type-item">
+                    <img src="img/qi_deficiency.svg" alt="Qi Deficiency" class="constitution-type-icon">
+                    <p class="constitution-type-name">Qi Deficiency</p>
+                </div>
+                <div class="constitution-type-item">
+                    <img src="img/yang_deficiency.svg" alt="Yang Deficiency" class="constitution-type-icon">
+                    <p class="constitution-type-name">Yang Deficiency</p>
+                </div>
+                <div class="constitution-type-item">
+                    <img src="img/yin_deficiency.svg" alt="Yin Deficiency" class="constitution-type-icon">
+                    <p class="constitution-type-name">Yin Deficiency</p>
+                </div>
+                <div class="constitution-type-item">
+                    <img src="img/phlegm_dampness.svg" alt="Phlegm Dampness" class="constitution-type-icon">
+                    <p class="constitution-type-name">Phlegm Dampness</p>
+                </div>
+                <div class="constitution-type-item">
+                    <img src="img/blood_stasis.svg" alt="Blood Stasis" class="constitution-type-icon">
+                    <p class="constitution-type-name">Blood Stasis</p>
+                </div>
+                <div class="constitution-type-item">
+                    <img src="img/balanced.svg" alt="Balanced" class="constitution-type-icon">
+                    <p class="constitution-type-name">Balanced</p>
+                </div>
+            </div>
+
+            <!-- 常见问题 (FAQ) -->
+            <h2 style="text-align: center; margin: 40px 0 24px;">Frequently Asked Questions</h2>
+            <div class="card">
+                <h3>Which TCM body type am I?</h3>
+                <p>Take our comprehensive quiz to determine your TCM constitution type. The assessment evaluates physical traits, symptoms, and patterns to provide personalized insights.</p>
+            </div>
+            <div class="card">
+                <h3>How to balance Yin and Yang naturally?</h3>
+                <p>Based on your TCM pattern, our recommendations will help restore balance through diet, herbs, lifestyle adjustments, and activity levels suited to your constitution.</p>
+            </div>
+            <div class="card">
+                <h3>What is Qi imbalance and its symptoms?</h3>
+                <p>Qi imbalance may manifest as fatigue, digestive issues, frequent colds, and low energy. Our test helps identify specific patterns of Qi disruption in your body.</p>
+            </div>
+
+            <!-- 行动号召 -->
+            <div style="text-align: center; margin: 48px 0;">
+                <a href="quiz.html" class="btn btn-primary btn-lg" data-i18n="start_quiz">Find Your TCM Pattern</a>
+            </div>
+            
+            <!-- 联系我们 -->
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p style="margin-bottom: 16px;">Have questions about Chinese medicine or feedback about our quiz? We'd love to hear from you.</p>
+                <a href="mailto:zhenliwang9@gmail.com" class="contact-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    zhenliwang9@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer style="background-color: var(--apple-light-gray); padding: 24px 0; text-align: center; margin-top: 48px;">
+        <div class="container">
+            <p>© 2023 TCM Constitution Quiz. All rights reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.9rem; color: var(--apple-gray);">This quiz is for informational purposes only and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="js/translations.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html> 

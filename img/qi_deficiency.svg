@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#f5f7fa" stroke="#0071e3" stroke-width="4"/>
+  
+  <!-- 气的象形文字样式 -->
+  <g transform="translate(50, 65) scale(0.7)">
+    <!-- 气的主体 -->
+    <path d="M40,10 C80,10 110,30 110,70 C110,110 80,130 40,130 C10,130 10,110 10,100 L40,100 C40,110 40,110 50,110 C70,110 80,100 80,70 C80,40 60,30 40,30 L40,10 Z" fill="#0071e3"/>
+    
+    <!-- 气的上升线条 -->
+    <path d="M125,40 C135,35 145,35 155,40 M125,60 C135,55 145,55 155,60 M125,80 C135,75 145,75 155,80" stroke="#0071e3" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- 表示低能量的波浪线 -->
+  <path d="M50,140 C60,135 70,145 80,140 C90,135 100,145 110,140 C120,135 130,145 140,140" stroke="#86868b" stroke-width="3" stroke-dasharray="2,2" fill="none"/>
+</svg> 

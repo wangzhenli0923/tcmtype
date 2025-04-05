@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#f5f7fa" stroke="#0071e3" stroke-width="4"/>
+  
+  <!-- 太阳符号 (阳) - 减弱的样式 -->
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#0071e3" stroke-width="3" stroke-dasharray="5,3"/>
+  
+  <!-- 放射状光芒 - 较弱 -->
+  <g stroke="#0071e3" stroke-width="2" stroke-dasharray="3,3">
+    <line x1="100" y1="40" x2="100" y2="30" />
+    <line x1="100" y1="160" x2="100" y2="170" />
+    <line x1="40" y1="100" x2="30" y2="100" />
+    <line x1="160" y1="100" x2="170" y2="100" />
+    
+    <line x1="129" y1="71" x2="136" y2="64" />
+    <line x1="71" y1="129" x2="64" y2="136" />
+    <line x1="129" y1="129" x2="136" y2="136" />
+    <line x1="71" y1="71" x2="64" y2="64" />
+  </g>
+  
+  <!-- 雪花象征寒冷 -->
+  <g fill="#86868b">
+    <circle cx="70" cy="70" r="5" />
+    <circle cx="130" cy="70" r="5" />
+    <circle cx="70" cy="130" r="5" />
+    <circle cx="130" cy="130" r="5" />
+    <circle cx="100" cy="60" r="5" />
+    <circle cx="100" cy="140" r="5" />
+    <circle cx="60" cy="100" r="5" />
+    <circle cx="140" cy="100" r="5" />
+  </g>
+  
+  <!-- 温度计 - 显示低温 -->
+  <rect x="145" y="75" width="10" height="50" rx="5" ry="5" fill="white" stroke="#0071e3" stroke-width="2"/>
+  <circle cx="150" cy="130" r="8" fill="#2196F3" stroke="#0071e3" stroke-width="2"/>
+  <rect x="148" y="85" width="4" height="40" rx="2" ry="2" fill="#2196F3"/>
+</svg> 
